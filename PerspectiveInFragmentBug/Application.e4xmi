@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_XqJdUDoGEeKwSeEl5ie4hA" elementId="application.with.bug" bindingContexts="_XqJdUToGEeKwSeEl5ie4hA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_XqJdZzoGEeKwSeEl5ie4hA" label="PerspectiveInFragmentBug" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_XqJdbzoGEeKwSeEl5ie4hA" elementId="perspectivestack.with.bug">
+      <children xsi:type="advanced:Perspective" xmi:id="_XqJdcDoGEeKwSeEl5ie4hA" elementId="perspective.working">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_XqJdcToGEeKwSeEl5ie4hA" elementId="perspective.working.partsashcontainer">
+          <children xsi:type="basic:PartStack" xmi:id="_XqJdcjoGEeKwSeEl5ie4hA" elementId="perspective.working.partstack">
+            <children xsi:type="basic:Part" xmi:id="_gOPlUDoGEeKwSeEl5ie4hA" elementId="perspective.working.part" label="This part is in the working perspective"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_XqJdaDoGEeKwSeEl5ie4hA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_XqJdaToGEeKwSeEl5ie4hA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_XqJdajoGEeKwSeEl5ie4hA" label="Open" iconURI="platform:/plugin/PerspectiveInFragmentBug/icons/sample.gif" command="_XqJdXjoGEeKwSeEl5ie4hA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_XqJdazoGEeKwSeEl5ie4hA" label="Save" iconURI="platform:/plugin/PerspectiveInFragmentBug/icons/save_edit.gif" command="_XqJdYToGEeKwSeEl5ie4hA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_XqJdbDoGEeKwSeEl5ie4hA" label="Quit" command="_XqJdWjoGEeKwSeEl5ie4hA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_XqJdbToGEeKwSeEl5ie4hA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_XqJdbjoGEeKwSeEl5ie4hA" label="About" command="_XqJdZDoGEeKwSeEl5ie4hA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_XqJdczoGEeKwSeEl5ie4hA">
+      <children xsi:type="menu:ToolBar" xmi:id="_XqJddDoGEeKwSeEl5ie4hA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_QxQA8DoIEeKwSeEl5ie4hA" elementId="perspectiveinfragmentbug.handledtoolitem.switchtoworkingperspective" label="Switch to working perspective" command="_AXwqADoIEeKwSeEl5ie4hA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_T5-FYDoIEeKwSeEl5ie4hA" elementId="perspectiveinfragmentbug.handledtoolitem.switchtobrokenperspective" label="Switch to broken perspective" command="_D6IkkDoIEeKwSeEl5ie4hA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_XqJdWzoGEeKwSeEl5ie4hA" contributionURI="bundleclass://PerspectiveInFragmentBug/perspectiveinfragmentbug.handlers.QuitHandler" command="_XqJdWjoGEeKwSeEl5ie4hA"/>
+  <handlers xmi:id="_XqJdXzoGEeKwSeEl5ie4hA" contributionURI="bundleclass://PerspectiveInFragmentBug/perspectiveinfragmentbug.handlers.OpenHandler" command="_XqJdXjoGEeKwSeEl5ie4hA"/>
+  <handlers xmi:id="_XqJdYjoGEeKwSeEl5ie4hA" contributionURI="bundleclass://PerspectiveInFragmentBug/perspectiveinfragmentbug.handlers.SaveHandler" command="_XqJdYToGEeKwSeEl5ie4hA"/>
+  <handlers xmi:id="_XqJdZToGEeKwSeEl5ie4hA" contributionURI="bundleclass://PerspectiveInFragmentBug/perspectiveinfragmentbug.handlers.AboutHandler" command="_XqJdZDoGEeKwSeEl5ie4hA"/>
+  <handlers xmi:id="_IyD80DoIEeKwSeEl5ie4hA" elementId="perspectiveinfragmentbug.handler.switchtoworkingperspective" contributionURI="bundleclass://PerspectiveInFragmentBug/perspectiveinfragmentbug.handlers.SwitchToWorkingPerspectiveHandler" command="_AXwqADoIEeKwSeEl5ie4hA"/>
+  <handlers xmi:id="_MQZE4DoIEeKwSeEl5ie4hA" elementId="perspectiveinfragmentbug.handler.switchtobrokenperspective" contributionURI="bundleclass://PerspectiveInFragmentBug/perspectiveinfragmentbug.handlers.SwitchToBrokenPerspectiveHandler" command="_D6IkkDoIEeKwSeEl5ie4hA"/>
+  <bindingTables xmi:id="_XqJdXDoGEeKwSeEl5ie4hA" bindingContext="_XqJdUToGEeKwSeEl5ie4hA">
+    <bindings xmi:id="_XqJdXToGEeKwSeEl5ie4hA" keySequence="M1+Q" command="_XqJdWjoGEeKwSeEl5ie4hA"/>
+    <bindings xmi:id="_XqJdYDoGEeKwSeEl5ie4hA" keySequence="M1+O" command="_XqJdXjoGEeKwSeEl5ie4hA"/>
+    <bindings xmi:id="_XqJdYzoGEeKwSeEl5ie4hA" keySequence="M1+S" command="_XqJdYToGEeKwSeEl5ie4hA"/>
+    <bindings xmi:id="_XqJdZjoGEeKwSeEl5ie4hA" keySequence="M1+A" command="_XqJdZDoGEeKwSeEl5ie4hA"/>
+  </bindingTables>
+  <rootContext xmi:id="_XqJdUToGEeKwSeEl5ie4hA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_XqJdUjoGEeKwSeEl5ie4hA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_XqJdUzoGEeKwSeEl5ie4hA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_XqJdWjoGEeKwSeEl5ie4hA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_XqJdXjoGEeKwSeEl5ie4hA" elementId="PerspectiveInFragmentBug.open" commandName="openCommand"/>
+  <commands xmi:id="_XqJdYToGEeKwSeEl5ie4hA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_XqJdZDoGEeKwSeEl5ie4hA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_AXwqADoIEeKwSeEl5ie4hA" elementId="perspectiveinfragmentbug.command.switchtoworkingperspective" commandName="switch to working perspective"/>
+  <commands xmi:id="_D6IkkDoIEeKwSeEl5ie4hA" elementId="perspectiveinfragmentbug.command.switchtobrokenperspective" commandName="switch to broken perspective"/>
+  <addons xmi:id="_XqJdVDoGEeKwSeEl5ie4hA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_XqJdVToGEeKwSeEl5ie4hA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_XqJdVjoGEeKwSeEl5ie4hA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_XqJdVzoGEeKwSeEl5ie4hA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_XqJdWDoGEeKwSeEl5ie4hA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_XqJdWToGEeKwSeEl5ie4hA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

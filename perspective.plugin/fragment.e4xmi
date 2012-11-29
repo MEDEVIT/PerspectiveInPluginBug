@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_vcreYDoGEeKwSeEl5ie4hA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_wgivIDoGEeKwSeEl5ie4hA" featurename="children" parentElementId="perspectivestack.with.bug">
+    <elements xsi:type="advanced:Perspective" xmi:id="_z-Xg4DoGEeKwSeEl5ie4hA" elementId="perspective.broken">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_4-PUMDoGEeKwSeEl5ie4hA" elementId="perspective.broken.partsashcontainer">
+        <children xsi:type="basic:PartStack" xmi:id="_5TJ0QDoGEeKwSeEl5ie4hA" elementId="perspective.broken.partstack">
+          <children xsi:type="basic:Part" xmi:id="_5hWoUDoGEeKwSeEl5ie4hA" elementId="perspective.broken.part" label="This part is in the broken perspective"/>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

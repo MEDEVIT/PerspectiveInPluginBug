@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: perspective.plugin
+Bundle-SymbolicName: perspective.plugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.e4.ui.workbench;bundle-version="0.10.3"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
