@@ -3,27 +3,21 @@ BUG
 
 This example project demonstrates following bug:
 
- * If at application-startup the selected perspective is in another plugin it will crash
+ * It will crash at application-startup if the selected perspective is in another plugin
 
 Steps to reproduce
 ==================
 
  * Create new RCP-Application with a Application.e4xmi
- * Create new PlugIn with a model-fragment
- * Define a perspective in the model-fragment and contribute it to the perspective-stack
+ * Create new PlugIn with a model-fragment (fragment.e4xmi)
+ * Define a perspective in the model-fragment and contribute it to the perspective-stack in Application.e4xmi
  * Add the plugin to the product
- * Implement a little perspective switcher to switch between perspectives in Application.e4xmi and fragment.e4xmi
+ * Implement a little perspective-switcher to switch between the perspectives in Application.e4xmi and fragment.e4xmi
  * Restart the application
 
-Working
--------
+**Working when** the selected perspective is in Application.e4xmi. It will restart without errors.
 
-When the selected perspective is in Application.e4xmi it will restart without errors.
-
-Broken
-------
-
-When the selected perspective is in fragment.e4xmi it will throw an exception:
+**Broken when** the selected perspective is in fragment.e4xmi. It will throw an exception at startup:
 
     java.lang.NullPointerException
       at org.eclipse.e4.ui.model.internal.ModelUtils.getContainingContext(ModelUtils.java:181)
